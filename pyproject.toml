@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "ctrldcz"
+version = "0.1.0"
+description = ""
+authors = ["rodrigmars <rodrigmars@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[tool.poetry.group.dev.dependencies]
+autopep8 = "^1.7.0"
+pylint = "^2.15.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+ctrl = "ctrldcz.app:start"
